@@ -1,0 +1,1 @@
+# Variáveis já o executam aparentemente, mas funções podem retornar valores que podem ser armazenados em variáveis, ou não. A função `return` é usada para enviar um valor de volta para o chamador da função.

@@ -1,0 +1,1 @@
+# Aparentemente muito usadas em desacomplamento de interfaces, as funções aninhadas são funções definidas dentro de outras funções. Elas podem acessar variáveis da função externa e são úteis para criar closures e encapsular lógica.

@@ -1,0 +1,1 @@
+# strip() -> da classe str.
