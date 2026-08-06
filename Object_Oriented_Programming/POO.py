@@ -164,7 +164,89 @@
         # endregion 
         
     # endregion
+    # region | formas de instanciar um objeto
 
+        # Existem diversas formas de criar um objeto.
+
+        # OBS: 
+            # Independentemente da forma utilizada, toda
+            # instanciação de uma classe normalmente passa pelo
+            # processo de:
+            
+            # 1. __new__  -> cria o objeto.
+            # 2. __init__ -> inicializa o objeto.
+
+        # region | Instanciação direta (mais comum)
+
+            # O próprio nome da classe é chamado como uma função.
+            
+            # class Pessoa:
+            #     ...
+            
+            # p = Pessoa()
+
+        # endregion
+        # region | Através de uma função (Factory Function)
+
+            # Uma função cria e retorna uma instância.
+            
+            # def criar_pessoa(nome):
+            #     return Pessoa(nome)
+            
+            # p = criar_pessoa("Victor")
+
+        # endregion
+        # region | Através de um método de classe (Factory Method)
+
+            # Um método marcado com @classmethod cria e retorna
+            # uma nova instância da própria classe.
+            
+            # class Pessoa:
+            #
+            #     @classmethod
+            #     def anonima(cls):
+            #         return cls("Anônimo")
+            
+            # p = Pessoa.anonima()
+
+        # endregion
+        # region | Sobrescrevendo __new__
+
+            # __new__ é responsável por criar o objeto antes de
+            # __init__ inicializá-lo. É utilizado em casos
+            # especiais, como tipos imutáveis, singletons ou
+            # controle da criação de instâncias.
+            
+            # class Pessoa:
+            #     def __new__(cls):
+            #         return super().__new__(cls)
+
+        # endregion
+        # region | Copiando um objeto existente
+
+            # Em vez de criar um objeto "do zero", pode-se criar
+            # uma nova instância copiando outra.
+            
+            # import copy
+            
+            # p2 = copy.copy(p1)      # cópia rasa
+            # p3 = copy.deepcopy(p1)  # cópia profunda
+
+        # endregion
+        # region | Desserialização
+
+            # Alguns módulos recriam objetos a partir de arquivos,
+            # bytes ou texto.
+            
+            # import pickle
+            
+            # objeto = pickle.load(arquivo)
+
+        # endregion
+
+    # endregion
+
+    # endregion
 # endregion
 # region | Herança ❌
 

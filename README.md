@@ -57,3 +57,23 @@ Organizei dois tipos de estruturas utilizando regions.
 
 # extra - legendas:
 * Existem arquivos em que a legenda é devida, outro não, nem todos que devem ter as têm ainda, mas terão conforme for estudando.
+
+# extra - OBS's:
+* Caso venha a criar um OBS indentado (com regions ou não), o posso colocar separado de regions filhas ou pais, para dar destaque. Por exemplo:
+   
+        # region | Classe
+            # region | Atributos
+
+                # OBS:
+                    Existem atributos de classe e os atributos e de instância, são diferentes.
+
+                # region | Definição
+
+                    # são variáveis, dentro da estrutura de uma classe, associadas a uma classe ou 
+                    instância, responsáveis por armazenar o estado e os dados do objeto.
+
+                # endregion 
+            
+            # endregion 
+
+        # endregion 
