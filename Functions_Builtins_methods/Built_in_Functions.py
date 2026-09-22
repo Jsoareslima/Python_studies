@@ -370,6 +370,8 @@ print(id(10))
 # ==============================================================
 # input()
 # Recebe entrada do usuário.
+# sempre retorna uma string, se o objetivo for utilizar o dado inserido para cálculo, será necessário conversão. 
+# Para tal veja as builtin defs "int(), float()" etc.
 # ==============================================================
 
 # nome = input("Digite seu nome: ")

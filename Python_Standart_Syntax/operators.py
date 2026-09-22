@@ -16,6 +16,10 @@
 
 #===========================================================
 
+# OBS: a linguagem Não permite misturar tipos sem conversão explícita, evita ambiguidades.
+
+#===========================================================
+
 # region | Operadores aritméticos
     # region | Definição
 
@@ -164,7 +168,29 @@
         # False
 
     # endregion
+    # region | IN
 
+            # lista = [10, 20, 30]
+
+            # 20 in lista
+            # -> True
+
+            # O operador "in" verifica se determinado elemento
+            # existe dentro da coleção.
+
+             
+
+    # endregion
+    # region | NOT IN
+
+        # Verifica se um elemento NÃO pertence à coleção.
+
+        # 4 not in [1, 2, 3]
+        # -> True
+
+    # endregion
+
+    # endregion
 # endregion
 
 # region | Operadores de atribuição

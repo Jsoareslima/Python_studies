@@ -371,7 +371,11 @@
     # para interação segura com o objeto.
 # endregion
 
-# region | classes aninhadas
-    # region | composição ❌
+# region | composição ❌
+
+    #  region | classes aninhadas
+    # endregion
+
 # endregion
+
 

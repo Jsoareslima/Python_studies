@@ -80,7 +80,9 @@ Variable_A = "hello world"
     # Didaticamente, pode ser vista como o "átomo" do texto em Python,
     # já que a linguagem não possui um tipo Char separado para representar
     # um único caractere individualmente.
+# endregion
     
+# region | tuple
 Variable_j = (1, 2, 3) 
     # -> tuple (coleção ordenada imutável)
 # endregion
