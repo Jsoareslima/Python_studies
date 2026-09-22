@@ -6,7 +6,7 @@
 # sobre valores (operandos).
 #
 # Exemplo:
-# 10 + 5
+# 10 + 5k
 #
 # "+" é o operador
 # 10 e 5 são os operandos
@@ -20,7 +20,7 @@
 
 #===========================================================
 
-# region | Operadores aritméticos
+# region | Operadores aritméticos ✅
     # region | Definição
 
         # utilizados para realizar cálculos matemáticos.
@@ -75,7 +75,7 @@
 
 # endregion
 
-# region | Operadores de comparação
+# region | Operadores de comparação ✅
     # region | Definição 
 
         # sempre retornam True ou False.
@@ -125,32 +125,30 @@
 
 # endregion
 
-# region | Operadores lógicos
+# region | Operadores lógicos ✅
     # region | Definição
 
         # utilizados para combinar condições.
 
     # endregion
     # region | Dados para a exemplificação feita mais abaixo
-        
+         
         # idade = 20
         # tem_carteira = True
 
     # endregion
     # region | AND:
 
-        # só retorna True se TODAS as condições forem verdadeiras.
-
-        # print(idade >= 18 and tem_carteira)
-        # True
+        # Só é considerado verdadeiro se TODOS os operandos avaliados forem truthy.
+        # Retorna o primeiro valor falsy encontrado ou, se todos forem truthy,
+        # retorna o último valor avaliado.
 
     # endregion
     # region | OR:
 
-        # retorna True se PELO MENOS UMA condição for verdadeira.
-
-        # print(idade >= 18 or tem_carteira)
-        # True
+        # É considerado verdadeiro se PELO MENOS UM operando for truthy.
+        # Retorna o primeiro valor truthy encontrado ou, se todos forem falsy,
+        # retorna o último valor avaliado.
 
     # endregion 
     # region | NOT:
@@ -191,9 +189,8 @@
     # endregion
 
     # endregion
-# endregion
 
-# region | Operadores de atribuição
+# region | Operadores de atribuição ✅
     # region | Definição
 
         # servem para armazenar ou atualizar valores.
@@ -267,7 +264,7 @@
 
 
 
-# region | Operadores de identidade 
+# region | Operadores de identidade 📍 
 
 # Verificam se duas variáveis apontam para o MESMO objeto
 # na memória.
@@ -300,7 +297,7 @@ print(a is b)
 
 # endregion
 
-# region | Operadores de pertencimento
+# region | Operadores de pertencimento 📍
 
 # Verificam se um valor está presente dentro de uma
 # sequência (lista, string, tupla, etc).
@@ -323,7 +320,7 @@ print("Java" in texto)
 
 # endregion
 
-# region | Operador ternário
+# region | Operador ternário 📍
 
 # Forma compacta de escrever um if/else simples.
 
@@ -345,7 +342,7 @@ else:
 
 # endregion
 
-# region | Operadores bitwise (binários)
+# region | Operadores bitwise (binários) 📍
 
 # Trabalham diretamente sobre os bits de números inteiros.
 # Assunto mais avançado.
@@ -371,7 +368,7 @@ print(a >> 1)  # Shift à direita
 
 # endregion
 
-# region | Precedência dos operadores
+# region | Precedência dos operadores 📍
 
 # Ordem simplificada:
 
@@ -399,7 +396,7 @@ print(resultado)
 
 # endregion
 
-# region | Pegadinhas comuns
+# region | Pegadinhas comuns 📍
 
 # 1. Divisão sempre retorna float
 print(10 / 2)   # 5.0

@@ -65,9 +65,9 @@ class StructPessoa: nome: str; idade: int
 Variable_N = id(Variable_A) 
     # -> Pointer/Reference (Endereço): Representa, na memória, a localização de um dado na memória.
     # ============================================
-    # Nesse caso nós estamos verificando o endereço de memória (através da função id()) que a Variable_A está armazenando.
+    # Nesse caso nós estamos verificando o endereço de memória (através da função id()) que a Variable_A está armazenando. em CPython, id(objeto) normalmente corresponde ao endereço de memória do objeto.
     # =============================================
-    # Em Python, não manipulamos o ponteiro diretamente, somente podemos acessar o endereço de memória através da função id(), mudando o apontamento. 
+    # Em Python, não manipulamos o ponteiro diretamente, somente podemos acessar o endereço de memória através da função id().
     # Toda variável é uma referência (ponteiro) que aponta para um objeto.
 # endregion
 
@@ -82,11 +82,11 @@ def funcao(dado: int | str):
 
     # Triagem (Ação):
     if isinstance(dado, int): 
-        # O interpretador confirma a 'identidade' do objeto para aplicar a ferramenta correta.
+        # O interpretador confirma o tipo do objeto para aplicar a ferramenta correta.
         return dado + 1
     
-    # O "else" (como sendo o único caminho restante) aqui é seguro porque a Union restringiu a entrada; se não é int, só pode ser str.
+    # O "else" (como sendo o único caminho restante) aqui é seguro porque o if triou a entrada; se não é int, só pode ser str.
     return f"Você digitou uma string: {dado.upper()}"
 
-    # isinstance(objeto, tipo) -> Função de checagem (triagem); essencial para refinar o comportamento baseado no tipo real do objeto, permitindo que o código execute comportamentos diferentes para cada tipo sem causar erros de tipagem forte.
+    # isinstance(objeto, tipo) -> Função de checagem (triagem); essencial para refinar o comportamento baseado no tipo real do objeto, permitindo que o código execute comportamentos diferentes para cada tipo, evitando operações incompatíveis com o yipo do objeto.
 # endregion

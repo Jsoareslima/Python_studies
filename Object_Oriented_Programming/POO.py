@@ -2,24 +2,6 @@
 # CONCEITOS GERAIS DE POO
 # =================================
 
-# LEGENDA:
-
-    # ✅ -> Completo, mas sempre com espaço para aprofundamento;
-    # ❌ -> Incompleto ou vazio;
-    # 📍 -> Expressa necessidade de revisão, sendo completo ou não;
-    # 🎯 -> meu alvo de estudos no momento;
-
-# DETALHES:
-
-    # Se uma region filha for ❌:
-        # a region pai terá que ter essa mesma legenda, independente de ter outras filhas ✅.
-        # o mesmo vale para qualquer outra legenda.
-
-    # Se uma region pai tiver alguma legenda (✅❌🎯📍) e a(s) regions filhas tiverem a mesma legenda:
-        #  Não há necessidade de repetir as legendas nas regions filhas.
-
-# ======================================
-
 # region | Classe ✅
     # region | Atributos 
         # region | Definição
@@ -131,6 +113,7 @@
     # endregion
 
 # endregion
+
 # region | Instância/objeto ✅
     # region | Definição
 
@@ -247,7 +230,7 @@
     # endregion
 
     # endregion
-# endregion
+
 # region | Herança ❌
 
     # Herança é um mecanismo pelo qual uma nova classe (classe filha ou subclasse) é construída a partir de uma classe existente (classe pai ou superclasse), passando automaticamente a possuir todos os atributos e métodos definidos na classe pai, podendo ainda adicionar novos comportamentos ou modificar os existentes.
