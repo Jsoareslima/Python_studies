@@ -56,7 +56,7 @@ Foram organizadas dois tipos de estruturas.
 * Segue o mesmo padrão da 2ª estrutura.
 
 # extra - legendas:
-* Existem arquivos em que a legenda é devida, outro não, nem todos que devem ter as têm ainda, mas terão conforme for estudando.
+* Existem arquivos em que a legenda é devida, outros não, nem todos que devem ter as têm ainda, mas terão conforme for estudando.
 
 # extra - OBS's:
 * Caso venha a criar um OBS indentado (com regions ou não), o posso colocar separado de regions filhas ou pais, para dar destaque. Por exemplo:
