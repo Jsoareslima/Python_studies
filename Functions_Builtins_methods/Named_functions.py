@@ -9,8 +9,33 @@
         # É o valor, objeto ou referência (variável) fornecida a uma função
         # no momento em que ela é chamada.
 
+        # region | Funções como objetos
+        
+            # Em Python, funções são objetos.
+            # Por isso, podem ser armazenadas em variáveis,
+            # passadas como argumentos e retornadas por outras funções.
+    
+            # funcao   -> referencia a própria função
+            # funcao() -> executa a função e produz seu retorno
+    
+            # Função que recebe ou retorna outra função
+            # é uma função de ordem superior.
+
+            # Exemplo:
+                # def quadrado(numero):
+                #     return numero **2
+
+                # def aplicar_operacao(funcao, valor):
+                #     return funcao(valor)
+
+                # resultado = aplicar_operacao(quadrado, 5)
+                # print(resultado)
+        
+        # endregion
+
     # Parâmetro:
         # É uma variável local definida na assinatura da função (a interface estrutural declarativa da função), responsável por receber o valor/referência do argumento.
+
 #-----//--------//------------//----------//----------//-----------//---------//
 
 # region | Exemplo sem parâmetros:

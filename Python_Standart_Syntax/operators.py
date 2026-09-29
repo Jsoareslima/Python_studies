@@ -6,7 +6,7 @@
 # sobre valores (operandos).
 #
 # Exemplo:
-# 10 + 5k
+# 10 + 5
 #
 # "+" é o operador
 # 10 e 5 são os operandos
@@ -16,11 +16,12 @@
 
 #===========================================================
 
-# OBS: a linguagem Não permite misturar tipos sem conversão explícita, evita ambiguidades.
+# OBS: tipos incompatíveis não são convertidos arbitrariamente só para uma operação funcionar; alguns tipos compatíveis possuem operações/conversões definidas entre si.
 
 #===========================================================
 
 # region | Operadores aritméticos ✅
+
     # region | Definição
 
         # utilizados para realizar cálculos matemáticos.
@@ -52,12 +53,12 @@
         # print(a / b)      -> 3.3333333333333335
 
     # endregion
-    # region | Divisão inteira (descarta a parte decimal)
+    # region | Divisão pelo piso (floor division: divide e arredonda o resultado para baixo)
 
         # print(a // b)     -> 3
 
     # endregion
-    # region | Módulo (divide inteiramente e retorna o resto da divisão, em inteiro)
+    # region | Módulo (retorna o resto associado à divisão pelo piso; o resultado não precisa ser int)
     
         # print(a % b)      -> 1
 
@@ -76,6 +77,7 @@
 # endregion
 
 # region | Operadores de comparação ✅
+
     # region | Definição 
 
         # sempre retornam True ou False.
@@ -126,9 +128,12 @@
 # endregion
 
 # region | Operadores lógicos ✅
+
     # region | Definição
 
         # utilizados para combinar condições.
+        # Truthy/Falsy descreve como um objeto se comporta em contexto booleano:
+        # bool(objeto) -> True = truthy; bool(objeto) -> False = falsy.
 
     # endregion
     # region | Dados para a exemplificação feita mais abaixo
@@ -153,7 +158,7 @@
     # endregion 
     # region | NOT:
 
-        # inverte o valor booleano.
+        # avalia a truthiness do operando e sempre retorna o bool oposto.
 
         # print(not tem_carteira)
         # False
@@ -166,34 +171,15 @@
         # False
 
     # endregion
-    # region | IN
 
-            # lista = [10, 20, 30]
-
-            # 20 in lista
-            # -> True
-
-            # O operador "in" verifica se determinado elemento
-            # existe dentro da coleção.
-
-             
-
-    # endregion
-    # region | NOT IN
-
-        # Verifica se um elemento NÃO pertence à coleção.
-
-        # 4 not in [1, 2, 3]
-        # -> True
-
-    # endregion
-
-    # endregion
+# endregion
 
 # region | Operadores de atribuição ✅
     # region | Definição
 
         # servem para armazenar ou atualizar valores.
+        # Com tipos imutáveis simples, x += y pode ser lido conceitualmente como x = x + y.
+        # Porém, operadores compostos também podem executar uma operação in-place e modificar o próprio objeto quando o tipo permite.
 
     # endregion
     # region | +=
@@ -202,7 +188,7 @@
         # depois da igualdade:
 
             # x = x + 5
-            # é igual a: x += 5
+            # para um int, equivale a: x += 5
 
     # endregion
     # region | *=
@@ -211,7 +197,7 @@
         # depois da igualdade:
 
             # x = x * 5
-            # é igual a: x *= 5
+            # para um int, equivale a: x *= 5
 
     # endregion
     # region | -=
@@ -220,7 +206,7 @@
         # depois da igualdade:
 
             # x = x - 5
-            # é igual a: x -= 5
+            # para um int, equivale a: x -= 5
 
     # endregion
     # region | /=
@@ -229,25 +215,25 @@
         # depois da igualdade:
 
             # x = x / 5
-            # é igual a: x /= 5
+            # para um int, equivale a: x /= 5
 
     # endregion
     # region | //=
 
-        # faz divisão inteira, do elemento da esquerda pelo da direita
+        # faz divisão pelo piso, do elemento da esquerda pelo da direita
         # depois da igualdade:
 
             # x = x // 5
-            # é igual a: x //= 5
+            # para um int, equivale a: x //= 5
 
     # endregion
     # region | %=
 
-        # modula (divide inteiramente e retorna o resto da divisão, em inteiro) o elemento da esquerda ao da direita
+        # calcula o módulo (resto associado à divisão pelo piso) do elemento da esquerda pelo da direita
         # depois da igualdade:
 
             # x = x % 5
-            # é igual a: x %= 5
+            # para um int, equivale a: x %= 5
 
     # endregion
     # region | **=
@@ -256,7 +242,7 @@
         # depois da igualdade:
 
             # x = x ** 5
-            # é igual a: x **= 5
+            # para um int, equivale a: x **= 5
 
     # endregion
 
@@ -299,8 +285,8 @@ print(a is b)
 
 # region | Operadores de pertencimento 📍
 
-# Verificam se um valor está presente dentro de uma
-# sequência (lista, string, tupla, etc).
+# Verificam se um valor pertence a um objeto que suporta teste de pertencimento
+# (lista, string, tupla, set, dict, etc.).
 
 lista = [1, 2, 3, 4]
 

@@ -1,12 +1,13 @@
 # region | ponto (.):
 
-    # é o operador de acesso a atributo.
-    # dado um objeto à esquerda, ele entra nesse objeto e retorna o valor do atributo nomeado à direita. Não cria vínculo, não busca em outro lugar, não executa lógica — apenas acessa o que já está guardado naquele objeto naquele momento.
+    # é a sintaxe de acesso/resolução de atributo.
+    # dado um objeto à esquerda, Python resolve o nome do atributo à direita e retorna o resultado dessa resolução.
+    # Em casos simples isso parece apenas acessar um valor armazenado, mas a busca pode envolver a instância, a classe/hierarquia e mecanismos como property/descriptors, podendo inclusive executar lógica.
 
-        # pythoncat.id        # entra em cat, retorna o valor de id
-        # entry.title   # entra em entry, retorna o valor de title
+        # pythoncat.id   # resolve o atributo id a partir de pythoncat
+        # entry.title    # resolve o atributo title a partir de entry
 
-    # se o atributo não existir no objeto, levanta AttributeError. Se o objeto for uma classe (não uma instância), só funciona se o atributo existir explicitamente na classe — não nos objetos criados a partir dela.
+    # se a resolução não encontrar o atributo (nem algum mecanismo dinâmico o fornecer), levanta AttributeError.
 
 # endregion 
 

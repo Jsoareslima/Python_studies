@@ -8,7 +8,7 @@
 # if, elif, else, match/case (estrutura de pattern matching semelhante ao switch/case de outras linguagens), etc.
 
 # Laços de repetição:
-# Permitem que um bloco de código seja executado várias vezes, com base em uma condição ou sequência.
+# Permitem que um bloco de código seja executado várias vezes, com base em uma condição ou percorrendo um iterável.
 # As estruturas de repetição mais comuns são:
 # for, while, etc.
 
@@ -20,7 +20,7 @@
 # Desvio de fluxo:
 # Permite que o programa altere o fluxo de execução abruptamente.
 # Manifestam-se através de:
-# break, continue, return, pass, etc.
+# break, continue, return, etc.
 
 #--------------------//-----------------------//-----------------//
 
@@ -83,7 +83,7 @@ match comando:
 # =========================
 
 # for:
-# Repete um bloco percorrendo uma sequência.
+# Repete um bloco percorrendo um iterável.
 
 for numero in [1, 2, 3]:
     print(numero)
@@ -103,11 +103,8 @@ while contador < 3:
 # CONTROLE DE EXCEÇÃO
 # =========================
 
-# try e except:
-# Try expressa a execução de um bloco de código que pode gerar erro, mas não tem propósito sem o except, pois o try é a tentativa de execução, mas o except é a captura do erro caso ele ocorra, tratando-o de maneira controlada.
-
-# finally:
-# Executa ao final do bloco try/except, independentemente de erro ter ocorrido ou não.
+# try / except / finally:
+# try delimita o bloco protegido. Ele precisa estar associado a pelo menos um except ou finally; o except captura/trata exceções, enquanto o finally executa ao final da estrutura independentemente de erro ter ocorrido ou não.
 
 # É possível capturar múltiplos tipos de erros chamando as classes que representam esses erros no except, como no exemplo abaixo.
 
@@ -167,8 +164,12 @@ resultado = somar(2, 3)
 print(resultado)
 
 
+# =========================
+# INSTRUÇÃO NULA / PLACEHOLDER
+# =========================
+
 # pass:
-# Não faz nada; usado como placeholder (que e algo que ocupa um lugar temporariamente até que alguma implementação real seja colocada ali).
+# Não desvia o fluxo: é uma instrução nula, usada como placeholder (algo que ocupa um lugar temporariamente até que alguma implementação real seja colocada ali).
 # Mantém a estrutura sintaticamente válida mesmo sem implementação.
 
 if True:

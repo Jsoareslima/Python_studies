@@ -11,7 +11,7 @@
         # endregion 
         # region | Atributos de instância
 
-            # São atributos definidos dentro do __init__ via self.atributo = valor. Pertencem exclusivamente ao objeto criado — cada instância tem os seus próprios, independentes das demais. Exemplo:
+            # São atributos associados a uma instância específica. É muito comum criá-los no __init__ via self.atributo = valor, mas eles também podem ser criados posteriormente. Cada instância pode possuir seus próprios atributos. Exemplo:
 
             # class Carro:
             #   def __init__(self, cor):
@@ -25,7 +25,7 @@
         # endregion
         # region | Atributos de classe
 
-            # São atributos definidos diretamente no corpo da classe, fora de qualquer método. São compartilhados entre todas as instâncias — se alterado na classe, todas as instâncias    sofrerão a mudança. Exemplo:
+            # São atributos definidos diretamente no corpo da classe, fora de qualquer método. As instâncias que não possuem um atributo de instância com o mesmo nome consultam esse atributo na classe; se ele for alterado na classe, essas instâncias perceberão a mudança. Exemplo:
 
             # class Carro:
             #     rodas = 4  -> todas as instâncias compartilham esse valor
@@ -130,7 +130,7 @@
     # region | Self
         # region | Definição
 
-            # Quando um método de instância é chamado, Python passa o próprio objeto como primeiro argumento automaticamente — você nunca escreve esse argumento, ele é injetado. self é o parâmetro que recebe essa referência, permitindo que o método leia e modifique os atributos daquele objeto específico. Por convenção se chama self, mas poderia ter qualquer nome. 
+            # Quando um método de instância é chamado normalmente através do objeto (objeto.metodo()), Python passa o próprio objeto como primeiro argumento automaticamente — você não fornece esse argumento explicitamente na chamada. self é o parâmetro que recebe essa referência, permitindo que o método leia e modifique os atributos daquele objeto específico. Por convenção se chama self, mas poderia ter qualquer nome. 
 
             # Existe independentemente do método inicializador.
 
@@ -293,7 +293,7 @@
 
             # print(dog.especie)   # herdado
 
-            # print(dog.nome)      # herdado
+            # print(dog.nome)      # atributo da própria instância, criado pelo __init__ herdado
 
             # dog.respirar()       # herdado
 

@@ -19,7 +19,7 @@ Variable_O = array.array('i', [1, 2, 3])
     # -> Array (Vetor; Coleção ordenada, mutável e de TIPO ÚNICO).
     # Estrutura otimizada para armazenar dados homogêneos, com menor custo de memória do que listas tradicionais.
     # -> array.array(): Chama o construtor dentro do módulo para fabricar o objeto.
-    # -> 'i' (Typecode): Define que cada "slot" terá o tamanho fixo de um inteiro (4 bytes).
+    # -> 'i' (Typecode): Define elementos com a representação de um signed int de C; todos têm tamanho fixo dentro do array, mas esse tamanho depende da plataforma (comumente 4 bytes).
     # -> [1, 2, 3]: Lista temporária usada apenas para "alimentar" o array com os dados iniciais.
     # -> 'import' localiza o módulo 'array' e o carrega na RAM como um objeto acessível, sem isso, o interpretador não conhece os 'Typecodes' (moldes) nem a lógica de memória contígua.
 # endregion    

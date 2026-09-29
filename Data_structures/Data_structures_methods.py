@@ -953,6 +953,8 @@
         #
         # também pode receber caracteres específicos
         # que serão removidos das extremidades.
+        # Esses caracteres são tratados individualmente como um conjunto de caracteres removíveis,
+        # e não como uma substring exata que precisa aparecer inteira.
 
     # endregion
 

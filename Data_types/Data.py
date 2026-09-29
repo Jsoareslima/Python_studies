@@ -15,8 +15,9 @@
 # Nuances importantes: 
     # tudo em python é um objeto, mas para fins didáticos podemos classificá-los como dados primitivos, especiais etc.
 
-    # Python é uma linguagem de tipagem dinâmica e forte, ou seja: 
-        # respectivamente, quem tem tipo é o valor (objeto), a variável é só uma referência que aponta para algo tipado e a linguagem Não permite misturar tipos sem conversão explícita, evita ambiguidades.
+    # Python é uma linguagem de tipagem dinâmica e forte, ou seja:
+        # respectivamente, quem tem tipo é o valor (objeto), e a variável é só uma referência que aponta para algo tipado.
+        # A tipagem forte significa que tipos incompatíveis não são convertidos arbitrariamente só para uma operação funcionar; alguns tipos compatíveis, porém, possuem operações/conversões definidas entre si.
 
 #============================================================
 # Extra: 
@@ -33,7 +34,7 @@ Variable_A = 42
     # -> ("primitivo")
 # endregion
 
-# region | decimal (float)
+# region | ponto flutuante (float)
 Variable_B = 3.14 
     # -> ( "primitivo")
 # endregion
@@ -58,7 +59,7 @@ from dataclasses import dataclass
 @dataclass
 class StructPessoa: nome: str; idade: int
     # -> Struct (Estrutura): Agrupamento de diferentes tipos de dados sob um único molde, não sendo, dessa forma, uma coleção, mas um dado único.
-    # Serve para criar um "formulário" personalizado onde cada campo tem um nome e um tipo definido.
+    # Serve para criar um "formulário" personalizado onde cada campo reconhecido pela dataclass tem um nome e uma anotação de tipo; essa anotação não impõe o tipo automaticamente em runtime.
 # endregion
 
 # region | ponteiro
@@ -74,7 +75,7 @@ Variable_N = id(Variable_A)
 # region | Union
 # Union (União de Tipos):
     # Não armazena dados e nem é um dado em si; é um Metadado (um dado sobre outro dado, cuja função aqui é indicar tipo [type hinting]).
-    # Explicita que um Identificador (parâmetro ou variável) aceita mais de uma espécie de objeto.
+    # Explicita que um Identificador (parâmetro ou variável) é esperado como uma entre mais de uma espécie de objeto.
 
 # Exemplo:
 def funcao(dado: int | str): 
@@ -85,8 +86,8 @@ def funcao(dado: int | str):
         # O interpretador confirma o tipo do objeto para aplicar a ferramenta correta.
         return dado + 1
     
-    # O "else" (como sendo o único caminho restante) aqui é seguro porque o if triou a entrada; se não é int, só pode ser str.
+    # Considerando respeitada a anotação int | str, o "else" é o único caminho restante: se não é int, só pode ser str.
     return f"Você digitou uma string: {dado.upper()}"
 
-    # isinstance(objeto, tipo) -> Função de checagem (triagem); essencial para refinar o comportamento baseado no tipo real do objeto, permitindo que o código execute comportamentos diferentes para cada tipo, evitando operações incompatíveis com o yipo do objeto.
+    # isinstance(objeto, tipo) -> Função de checagem (triagem); essencial para refinar o comportamento baseado no tipo real do objeto, permitindo que o código execute comportamentos diferentes para cada tipo, evitando operações incompatíveis com o tipo do objeto.
 # endregion

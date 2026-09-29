@@ -1,7 +1,7 @@
 #Algumas definições importantes para o estudo de módulos:
-# 1º Módulo: todo arquivo em Python com variáveis, classes e funções é um módulo.
-# 2º Pacotes: Pastas/diretórios que agrupam módulos relacionados. Em versões antigas do Python, o arquivo __init__.py era necessário para definir um pacote.
-# 3º Bibliotecas: módulos ou pacotes de terceiros.
+# 1º Módulo: unidade de código carregável/importável pelo Python; frequentemente corresponde a um arquivo .py, mesmo que ele não contenha variáveis, classes ou funções próprias.
+# 2º Pacotes: estruturas que agrupam módulos relacionados. Pacotes regulares usam __init__.py; também existem namespace packages, que podem existir sem esse arquivo.
+# 3º Bibliotecas: conjuntos de módulos/pacotes relacionados que fornecem funcionalidades; podem fazer parte da biblioteca padrão ou ser de terceiros.
 
 #-------//-----------------//----------------------//--------------------
 
@@ -79,7 +79,7 @@ import tarfile    # Manipulação de arquivos .tar.
 import csv        # Leitura/Escrita de arquivos CSV.
 import configparser # Manipulação de arquivos de configuração (.ini).
 import tomllib    # Leitura de arquivos TOML (novo no Python 3.11).
-import hashlib    # Hashes seguros (MD5, SHA1, SHA256).
+import hashlib    # Algoritmos de hash (MD5, SHA-1, SHA-2 etc.); MD5 e SHA-1 são legados e não são adequados para usos criptográficos que dependam de resistência a colisões.
 import hmac       # Autenticação de mensagens com hash (Keyed-Hashing).
 import secrets    # Geração de segredos seguros para senhas/tokens.
 # endregion
@@ -102,7 +102,7 @@ import multiprocessing # Processamento paralelo baseado em processos.
 import concurrent.futures # Lançador de tarefas paralelas de alto nível.
 import subprocess # Gerenciamento de sub-processos (roda comandos externos).
 import sched      # Agendador de eventos.
-import queue      # Filas sincronizadas para threads/processos.
+import queue      # Filas sincronizadas para comunicação entre threads; para processos, veja multiprocessing.Queue.
 import asyncio    # I/O assíncrono (corrotinas).
 # endregion
 

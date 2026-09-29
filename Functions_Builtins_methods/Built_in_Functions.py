@@ -226,11 +226,13 @@ print(divmod(10, 3))
 # region | enumerate()
 # ==============================================================
 # enumerate()
-# Percorre sequência adicionando índices.
+# Retorna um iterador que produz pares (índice, valor) ao percorrer um iterável.
 # ==============================================================
 
-for indice, valor in enumerate(["a", "b"]):
-    print(indice, valor)
+nomes = ["Ana", "João", "Carlos"]
+
+for indice, nome in enumerate(nomes, start=1):
+    print(indice, nome)
 # endregion
 
 
@@ -257,7 +259,7 @@ exec("print('Olá')")
 # region | filter()
 # ==============================================================
 # filter()
-# Filtra elementos.
+# Retorna um iterador com os elementos do iterável verificado que passam pelo teste informado.
 # ==============================================================
 
 pares = filter(lambda x: x % 2 == 0, [1, 2, 3, 4])
@@ -269,7 +271,7 @@ print(list(pares))
 # region | float()
 # ==============================================================
 # float()
-# Converte para decimal.
+# Converte/cria um número de ponto flutuante (float).
 # ==============================================================
 
 print(float("3.14"))
@@ -309,7 +311,7 @@ print(getattr(str, "upper"))
 # region | globals()
 # ==============================================================
 # globals()
-# Retorna escopo global.
+# Retorna o dicionário que representa o namespace global atual.
 # ==============================================================
 
 print(globals())
@@ -441,7 +443,7 @@ print(list((1, 2, 3)))
 # region | locals()
 # ==============================================================
 # locals()
-# Retorna escopo local.
+# Retorna um mapping que representa o namespace local atual.
 # ==============================================================
 
 print(locals())
@@ -451,12 +453,17 @@ print(locals())
 # region | map()
 # ==============================================================
 # map()
-# Aplica função em sequência.
+# Retorna um iterador que aplica uma função aos elementos de um ou mais iteráveis.
 # ==============================================================
 
-resultado = map(lambda x: x * 2, [1, 2, 3])
+def dobrar(numero):
+    return numero * 2
 
-print(list(resultado))
+numeros = [1,2,3]
+
+resultado = map(dobrar, numeros)
+
+print[(list(resultado))]
 # endregion
 
 
@@ -601,7 +608,7 @@ print(repr("Olá"))
 # region | reversed()
 # ==============================================================
 # reversed()
-# Retorna sequência invertida.
+# Retorna um iterador que percorre o objeto em ordem reversa.
 # ==============================================================
 
 print(list(reversed([1, 2, 3])))
@@ -654,7 +661,7 @@ print(slice(0, 5))
 # region | sorted()
 # ==============================================================
 # sorted()
-# Ordena coleção.
+# Percorre um iterável e retorna uma NOVA lista ordenada, sem modificar o objeto original.
 # ==============================================================
 
 print(sorted([3, 1, 2]))
@@ -745,7 +752,7 @@ print(vars())
 # region | zip()
 # ==============================================================
 # zip()
-# Junta sequências.
+# Retorna um iterador de tuplas que combina, posição a posição, elementos de iteráveis.
 # ==============================================================
 
 print(list(zip([1, 2], ["a", "b"])))

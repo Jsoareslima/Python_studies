@@ -303,7 +303,7 @@
 
         # lista = [10, 20, 30]
 
-        # [] representa um literal de lista.
+        # [...] é uma list display; [] é a forma vazia.
 
         # lista_vazia = []
 
@@ -384,7 +384,7 @@
 
         # tupla = (10, 20, 30)
 
-        # () é a representação literal comum de uma tupla.
+        # () é a forma sintática da tupla vazia; em tuplas não vazias, a vírgula é o elemento decisivo.
 
     # endregion
 
