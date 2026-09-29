@@ -2,17 +2,17 @@
 
 Este repositório reúne meus estudos de lógica de programação aplicada a Python 
 e já conta com 244+ arquivos. Manter um índice manual neste README seria 
-inviável e ficaria desatualizado rapidamente.
+inviável e ficaria desatualizado.
 
 Por isso, optei por organizar o conteúdo usando **regions** (`# region` / 
 `# endregion`) dentro dos próprios arquivos. Assim, basta abrir o projeto na 
 sua IDE (VS Code, PyCharm etc.) e usar o recurso de recolher/expandir seções 
 para navegar pelo conteúdo de forma rápida e visual.
 
-> 💡 **Dica:** a maioria das IDEs reconhece os comentários `# region` do Python 
+> a maioria das IDEs reconhece os comentários `# region` do Python 
 > automaticamente e permite colapsar essas seções na barra lateral ou no editor.
 
-⚠️ **Aviso:** essa organização ainda está em transição. Dependendo do arquivo, 
+⚠️ **OBS:** essa organização ainda está em transição. Dependendo do arquivo, 
 as regions podem não estar presentes, e alguns arquivos podem estar apenas 
 parcialmente organizados (ou seja, com regions definidas só em parte do conteúdo). 
 Estou ajustando isso gradualmente conforme revisito os estudos.
@@ -20,7 +20,7 @@ Estou ajustando isso gradualmente conforme revisito os estudos.
 ======================================================================
 
 # 🎯 Aviso para mim mesmo:
-Organizei dois tipos de estruturas utilizando regions.
+Foram organizadas dois tipos de estruturas utilizando regions.
 
 # 1ª - Uma estrutura organizacional para regions com exemplo em código normal:
 * Regions "coladas" ao bloco de código, porque o conteúdo não pode ser identado dentro do nada. Mas podendo haver espaços entre os conteúdos dentro da region. Exemplo:
