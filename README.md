@@ -19,8 +19,8 @@ Estou ajustando isso gradualmente conforme revisito os estudos.
 
 ======================================================================
 
-# 🎯 Aviso para mim mesmo:
-Foram organizadas dois tipos de estruturas utilizando regions.
+# 🎯 Quanto às region/endregions:
+Foram organizadas dois tipos de estruturas.
 
 # 1ª - Uma estrutura organizacional para regions com exemplo em código normal:
 * Regions "coladas" ao bloco de código, porque o conteúdo não pode ser identado dentro do nada. Mas podendo haver espaços entre os conteúdos dentro da region. Exemplo:
