@@ -122,6 +122,16 @@
         # endregion
 
     # endregion
+    # region | literais
+
+        # um literal é uma notação escrita diretamente no código-fonte que representa um valor. Quando o literal é avaliado, o Python fornece um objeto correspondente. exemplo:
+            
+        # 21        -> literal inteiro.
+        # 3.14      -> literal de ponto flutuante.
+        # "Python"  -> string literal.
+        # True      -> constante booleana.
+
+    # endregion    
 
     # OBS:
         # todos os dados em Python são representados por objetos.

@@ -13,35 +13,26 @@
 
 # region | Conceitos gerais 📍
 
-    # region | Literal 📍
+    # region | displays 📍
         # region | Definição ✅
-
-            # um literal é uma notação escrita diretamente no código-fonte que representa
-            # um valor. Quando o literal é avaliado, o Python fornece um objeto correspondente.
-            #
-            # exemplos de literais:
-            # 21        -> literal inteiro.
-            # 3.14      -> literal de ponto flutuante.
-            # "Python"  -> string literal.
-            # True      -> constante booleana.
-            #
+            
             # listas, dicionários e conjuntos são formalmente escritos por meio de displays.
-            # uma display é uma construção sintática que especifica o conteúdo de uma coleção
-            # e produz um objeto dessa coleção quando é avaliada.
-            #
+
+            # uma display é uma construção sintática que especifica o conteúdo de uma coleção e a constrói a partir de expressões. Python produz um objeto dessa coleção quando é avaliada.
+            
             # exemplos de displays:
             # [1, 2, 3]                 -> list display.
             # {"nome": "Victor"}        -> dict display.
             # {1, 2, 3}                 -> set display.
-            #
+            
             # a tupla possui uma forma particular: uma lista de expressões contendo vírgula
             # produz uma tupla mesmo quando não está delimitada por parênteses.
-            #
+            
             # delimitadores indicam os limites de uma construção sintática, mas nem sempre
             # são suficientes, sozinhos, para determinar o tipo da coleção.
-            #
+            
             # separadores distinguem os elementos ou itens existentes dentro da construção.
-            #
+            
             # uma display ou um literal é apenas uma forma de escrever e produzir um objeto.
             # o objeto também pode ser produzido por construtores, funções ou outras operações,
             # sem que sua display ou seu literal apareça diretamente naquele trecho do código.
