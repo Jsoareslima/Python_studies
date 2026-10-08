@@ -1,18 +1,14 @@
 
 # region | Dados
 
-
     # informações ou valores representados em um programa.
     # em Python, os dados são representados por objetos ou
     # por relações entre objetos.
 
-
     # region | Objetos
-
 
         # entidades que representam dados em Python.
         # todo objeto possui valor, tipo e identidade.
-
 
         # region | Valor
 
@@ -89,11 +85,9 @@
     # endregion
     # region | Variáveis
 
-
         # nomes associados a objetos dentro de um escopo.
         # permitem referenciar e reutilizar objetos e resultados
         # posteriormente, enquanto estiverem acessíveis.
-
 
         # region | Escopo
 
@@ -109,27 +103,21 @@
     # endregion
     # region | Tipagem do Python
 
-
         # características do sistema de tipos da linguagem.
 
-
         # region | Dinâmica
-
 
             # os objetos possuem tipos, enquanto os nomes
             # podem ser associados a objetos de tipos diferentes
             # durante a execução.
 
-
         # endregion
         # region | Forte
-
 
             # tipos incompatíveis não são convertidos
             # arbitrariamente para permitir operações.
             # algumas conversões implícitas são previstas
             # pela própria linguagem.
-
 
         # endregion
 
@@ -146,7 +134,6 @@
 
 
 # endregion
-
 
 #============================================================
 # Extra: 

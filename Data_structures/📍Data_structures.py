@@ -2,15 +2,42 @@
 # ESTRUTURAS DE DADOS / COLEÇÕES
 # =================================
 
-# O que são estruturas de dados (ou coleções)?
-    # Em Python, são formas de organizar dados para facilitar acesso e manipulação.
+# O que são estruturas de dados?
+    # formas de organizar e relacionar dados, permitindo armazená-los, acessá-los e manipulá-los.
 
-# Características das coleções:
-# - Ordenação: existência de uma sequência previsível dos elementos (índices em muitas coleções).
-# - Associação: capacidade de relacionar valores a chaves (dicionários).
-# - Mutabilidade/Imutabilidade: possibilidade de alterar os dados depois de criados.
-# - Duplicidade: se a estrutura permite elementos repetidos ou não.
+    # O que é uma coleção?
+        
+        # abstrações que reúnem elementos e permitem
+        # operações sobre eles.
 
+        # exemplos de estruturas nativas:
+            # list  -> sequência mutável.
+            # tuple -> sequência imutável.
+            # dict  -> mapeamento de chaves para valores.
+            # set   -> conjunto de elementos únicos.    
+
+        # Características das coleções:
+            # - Ordenação: existência de uma sequência previsível dos elementos (índices em muitas coleções).
+            # - Associação: capacidade de relacionar valores a chaves (dicionários).
+            # - Mutabilidade/Imutabilidade: possibilidade de alterar os dados depois de criados.
+            # - Duplicidade: se a estrutura permite elementos repetidos ou não.
+
+    # Relação com tipos
+
+        # tipo determina os valores e operações admitidos
+        # por um objeto; estrutura de dados descreve
+        # como os dados são organizados e relacionados.
+
+        # em Python, estruturas de dados são implementadas
+        # por tipos, nativos ou definidos pelo programador.
+
+    # OBS:
+    # uma mesma entidade pode ser analisada como objeto,
+    # instância de um tipo e estrutura de dados.
+
+    # internamente, objetos são representados por dados
+    # binários e referências na memória.
+    # sua organização depende do tipo e da implementação.
 
 # ======================================
 

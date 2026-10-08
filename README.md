@@ -9,7 +9,7 @@ Por isso, optei por organizar o conteúdo usando **regions** (`# region` /
 sua IDE (VS Code, PyCharm etc.) e usar o recurso de recolher/expandir seções 
 para navegar pelo conteúdo de forma rápida e visual.
 
-> 💡 **Dica:** a maioria das IDEs reconhece os comentários `# region` do Python 
+> a maioria das IDEs reconhece os comentários `# region` do Python 
 > automaticamente e permite colapsar essas seções na barra lateral ou no editor.
 
 ⚠️ **Aviso:** essa organização ainda está em transição. Dependendo do arquivo, 
@@ -19,7 +19,7 @@ Estou ajustando isso gradualmente conforme revisito os estudos.
 
 ======================================================================
 
-# 🎯 Aviso para mim mesmo:
+# 🎯 Formas de organização:
 Organizei dois tipos de estruturas utilizando regions.
 
 # 1ª - Uma estrutura organizacional para regions com exemplo em código normal:
@@ -35,7 +35,7 @@ Organizei dois tipos de estruturas utilizando regions.
 * O título das regions raízes e subsequentes até o conteúdo de fato pode começar com letras maiúsculas ou minúsculas, da mesma forma o conteúdo.
 
 # 2ª - Uma estrutura organizacional para regions com exemplo em código na forma de comentários:
-* O comentário explicativo fica identado e com duas linhas em branco entre ele e a region/endregion, "suspenso". Quando há várias regions/endregions em sequência (dentro de uma region "pai" ou não) o endregion da seção anterior fica colado à region da seção posterior ou não (a depender do que torne o texto melhor de se visualizar), mas o endregion da region "pai" (que agrupa qualquer conteúdo) e das "filhas" precisa de, obrigatoriamente, uma linha de espaço em relação ao que vier acima. Exemplo:
+* O comentário explicativo fica identado e com uma linha de diferença entre o conteúdo e a region/endregion, "suspenso". Quando há várias regions/endregions em sequência (dentro de uma region "pai" ou não) o endregion da seção anterior fica colado à region da seção posterior ou não (a depender do que torne o texto melhor de se visualizar), mas o endregion da region "pai" (que agrupa qualquer conteúdo) e das "filhas" precisa de, obrigatoriamente, uma linha de espaço em relação ao que vier acima. Exemplo:
 
         # region | Classe
             # region | Atributos 
@@ -76,4 +76,7 @@ Organizei dois tipos de estruturas utilizando regions.
             
             # endregion 
 
-        # endregion 
+        # endregion
+
+# extra:
+* Quando duas coisas forem tratadas como "a mesma coisa", estou comparando os conceitos que elas representam. Diferenças de implementação ou nível de abstração não são o foco em determinados momentos. mas poderão ser citados, pois o estilo de escrita aqui apresentado serve ao meu aprendizado e não o contrário. Qualquer sugestão de melhoria ou crítica construtiva é bem-vinda.
