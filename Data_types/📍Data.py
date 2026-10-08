@@ -1,23 +1,152 @@
-# Dado:
-    # É (literalmente) qualquer informação, valor.
 
-# Conceitos relacionados:
-    # Definição de variáveis: 
-        # são nomes que referenciam dados dentro de um contexto (escopo).
-        # Extra: elas permitem que armazenemos valores e os utilizemos/manipulemos posteriormente, sem que o python realize a operação e depois esqueça o resultado.
+# region | Dados
 
-    # Escopo:
-        # É o ambiente no qual identificadores (nomes/variáveis) podem ser reconhecidos e acessados.
-        # O escopo determina a visibilidade desses identificadores dentro do programa,
-        # podendo ser global ou local.
-#=======================================================
 
-# Nuances importantes: 
-    # tudo em python é um objeto, mas para fins didáticos podemos classificá-los como dados primitivos, especiais etc.
+    # informações ou valores representados em um programa.
+    # em Python, os dados são representados por objetos ou
+    # por relações entre objetos.
 
-    # Python é uma linguagem de tipagem dinâmica e forte, ou seja:
-        # respectivamente, quem tem tipo é o valor (objeto), e a variável é só uma referência que aponta para algo tipado.
-        # A tipagem forte significa que tipos incompatíveis não são convertidos arbitrariamente só para uma operação funcionar; alguns tipos compatíveis, porém, possuem operações/conversões definidas entre si.
+
+    # region | Objetos
+
+
+        # entidades que representam dados em Python.
+        # todo objeto possui valor, tipo e identidade.
+
+
+        # region | Valor
+
+
+            # conteúdo ou estado representado pelo objeto.
+
+
+        # endregion
+        # region | Tipo
+
+
+            # determina os valores que um objeto pode representar
+            # e as operações que ele suporta.
+            # permanece constante durante a existência do objeto.
+
+
+            # region | Classe
+
+
+                # mecanismo utilizado para definir tipos em Python.
+                # os próprios tipos também são objetos.
+
+
+            # endregion
+            # region | Instância
+
+
+                # objeto pertencente a uma classe.
+                # por exemplo, [1, 2] é uma instância de list.
+
+
+            # endregion
+            # region | Mutabilidade
+
+
+                # possibilidade de modificar o estado de um objeto.
+                # é determinada pelo tipo: list é mutável;
+                # int é imutável.
+
+
+            # endregion
+
+        # endregion
+        # region | Identidade
+
+
+            # propriedade que individualiza um objeto durante
+            # sua existência, independentemente do tipo ou valor.
+            # permite distinguir objetos diferentes e reconhecer
+            # referências que apontam para o mesmo objeto.
+            # pode ser consultada com id() e comparada com is.
+
+
+            # region | Curiosidade — CPython
+
+
+                # a identidade corresponde ao endereço do objeto
+                # na memória virtual do processo.
+                # id() retorna esse endereço como um inteiro.
+                # esse não é o endereço físico na RAM.
+
+                # o endereço permanece associado ao objeto
+                # durante sua existência, mas pode ser reutilizado
+                # após sua destruição.
+
+                # essa representação é específica do CPython;
+                # outras implementações podem utilizar outra forma.
+
+
+            # endregion
+
+        # endregion
+
+    # endregion
+    # region | Variáveis
+
+
+        # nomes associados a objetos dentro de um escopo.
+        # permitem referenciar e reutilizar objetos e resultados
+        # posteriormente, enquanto estiverem acessíveis.
+
+
+        # region | Escopo
+
+
+            # contexto em que um nome pode ser reconhecido
+            # e acessado durante a execução do programa.
+            # Python possui escopos locais, envolventes,
+            # globais e embutidos (built-in).
+
+
+        # endregion
+
+    # endregion
+    # region | Tipagem do Python
+
+
+        # características do sistema de tipos da linguagem.
+
+
+        # region | Dinâmica
+
+
+            # os objetos possuem tipos, enquanto os nomes
+            # podem ser associados a objetos de tipos diferentes
+            # durante a execução.
+
+
+        # endregion
+        # region | Forte
+
+
+            # tipos incompatíveis não são convertidos
+            # arbitrariamente para permitir operações.
+            # algumas conversões implícitas são previstas
+            # pela própria linguagem.
+
+
+        # endregion
+
+    # endregion
+
+    # OBS:
+        # todos os dados em Python são representados por objetos.
+        # termos como "primitivo" são classificações didáticas,
+        # não uma categoria de valores sem objetos.
+
+        # RAM é memória volátil, não persistência.
+        # persistência normalmente envolve SSD, HD ou outros
+        # meios de armazenamento não volátil.
+
+
+# endregion
+
 
 #============================================================
 # Extra: 
