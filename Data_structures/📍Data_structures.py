@@ -11,6 +11,7 @@
 # - Mutabilidade/Imutabilidade: possibilidade de alterar os dados depois de criados.
 # - Duplicidade: se a estrutura permite elementos repetidos ou não.
 
+
 # ======================================
 
 # region | array

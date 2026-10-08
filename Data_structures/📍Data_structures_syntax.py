@@ -23,7 +23,7 @@
             # 21        -> literal inteiro.
             # 3.14      -> literal de ponto flutuante.
             # "Python"  -> string literal.
-            # True      -> literal booleano.
+            # True      -> constante booleana.
             #
             # listas, dicionários e conjuntos são formalmente escritos por meio de displays.
             # uma display é uma construção sintática que especifica o conteúdo de uma coleção
@@ -764,8 +764,8 @@
 
         # texto = "Python"
 
-        # Strings representam sequências imutáveis
-        # de caracteres Unicode.
+        # Strings representam sequências imutáveis de
+        # pontos de código Unicode.
 
     # endregion
 
